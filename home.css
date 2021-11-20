@@ -1,0 +1,46 @@
+.background p{
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 100px; 
+}
+
+#start{
+     background-color: black;
+     color: white;
+     overflow: hidden;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 100px;
+     padding: 10px;
+     border-radius: 20px;
+     position: relative;
+     top: 50%;
+     left: 20%;
+     transition-duration: 0.4s;
+}
+
+#start:hover{
+     background-color: white;
+     color: black;
+}
+
+#youtube{
+     background-color: black;
+     color: white;
+     overflow: hidden;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 100px;
+     padding: 10px;
+     border-radius: 20px;
+     border: solid;
+     position: relative;
+     top: 50%;
+     left: 30%;
+     transition-duration: 0.4s;   
+}
+
+#youtube:hover{
+     background-color: white;
+     color: black;
+}
