@@ -5,19 +5,21 @@
   box-sizing:border-box;
 }
 body {
-  background:#555;
+  background:rgb(255, 255, 255);
 }
 
 .controls {
   height:50px;
   display:flex;
   align-items:center;
-  background:#ddd;
+  background:rgb(255, 255, 255);
   padding:0px 10px;
+  border-radius: 9999px;
 }
 .controls .title {
   font-weight:600;
-  color:#222;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
   width:80px;
 }
 .controls .type,
@@ -69,3 +71,35 @@ body {
   border: none;
   border-radius: 50%;
 } 
+
+.controls #reset-canvas{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 100px;
+}
+
+.controls #reset-canvas:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.controls #save-canvas{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 100px;
+}
+
+.controls #save-canvas:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.text{
+  font-weight:600;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30%;
+}
+
