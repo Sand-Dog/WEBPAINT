@@ -12,10 +12,15 @@ function checkSelector(selector){
      let color = checkSelector("#pen-color").value;
      fill(color);
      if(type == "pencil"){
-       line(pmouseX, pmouseY, mouseX, mouseY);
-     } else {
-       //change ellipse to line to sketch fabric
-       line(mouseX, mouseY, size, size);
+      //change ellipse to line to sketch fabric
+      ellipse(mouseX, mouseY, size, size);
+      stroke(color)
+      strokeWeight()
+     } 
+     else {
+      line(pmouseX, pmouseY, mouseX, mouseY);
+      stroke(color)
+      strokeWeight(size)
      }
    }
    function keyPressed(e) {
