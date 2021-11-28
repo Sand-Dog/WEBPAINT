@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+</html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>WEB PAINT!!</title>
+     <link rel="stylesheet" href="./style.css">
+     <script src="https://unpkg.com/scrollreveal@4"></script>
+	<script>
+		ScrollReveal({ duration: 1000 })
+	</script>
+</head>
+
+<body>
+     
+     <div class="controls">
+          <div class="title">SKETCH</div>
+          <div class="type">
+               <input type="radio" name="pen-type" id="pen-pencil" checked>
+               <label for="pen-pencil">
+                    <i class="fa fa-pencil"></i>
+               </label>
+               <input type="radio" name="pen-type" id="pen-brush">
+               <label for="pen-brush">
+                    <i class="fa fa-paint-brush"></i>
+               </label>
+          </div>
+          <div class="size">
+               <label for="pen-size">SIZE</label>
+               <input type="range" id="pen-size" min="1" max="100">
+          </div>
+          <div class="color">
+               <input type="color" id="pen-color" value="#000">
+               <span class="container" id="color_val"></span> 
+          </div>
+          <div class="text">CTRL + Z to undo</div>
+          <div class="actions">
+               <button id="reset-canvas">
+                    <i class="fas fa-trash-alt"></i>     
+               </button>
+               <button id="save-canvas">
+                    <i class="fas fa-save"></i>
+               </button>
+          </div>
+     </div>
+     <div id="canvas-wrapper"></div>
+</body>
+
+<script src="https://kit.fontawesome.com/80d394a813.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+<script src="./script.js"></script>
+<script>
+     ScrollReveal().reveal('.title', { delay: 500})
+     ScrollReveal().reveal('.size label', { delay: 500})
+     ScrollReveal().reveal('.text', { delay: 500})
+</script>
