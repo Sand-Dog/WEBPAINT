@@ -12,7 +12,7 @@ function checkSelector(selector){
      let color = checkSelector("#pen-color").value;
      fill(color);
      if(type == "pencil"){
-      //change ellipse to line to sketch fabric
+      //change ellipse to line to sketch a cone
       ellipse(mouseX, mouseY, size, size);
       stroke(color)
       strokeWeight()
